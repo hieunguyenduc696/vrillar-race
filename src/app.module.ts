@@ -7,6 +7,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { configuration } from './common/config/configuration';
 import { APP_FILTER } from '@nestjs/core';
 import { HttpExceptionFilter } from './common/exception';
+import { DriversModule } from './drivers/drivers.module';
 
 @Module({
   imports: [
@@ -18,6 +19,7 @@ import { HttpExceptionFilter } from './common/exception';
       dbName: configuration().dbName,
     }),
     RacesModule,
+    DriversModule,
   ],
   controllers: [AppController],
   providers: [
