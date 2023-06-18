@@ -16,6 +16,8 @@ $ yarn run start:dev
 
 ```bash
 Database sử dụng MongoDB, gồm 2 collections: Drivers (danh sách các outstanding drivers theo năm), Races (Danh sách races theo năm)
+Tất cả APIS đều sử dụng MongoDB Aggregation Pipeline
+
 Chương trình gồm 2 modules, drivers và races
 Module races bao gồm các APIS:
 - Create race
